@@ -11,6 +11,7 @@ if __name__ == '__main__':
     canvas.pack()
     ball = ball.Ball(canvas, wind_size)
     x, y = 20, 250
+    canvas.create_text(wind_size / 2, 50, text = 'Маятник', font = ('Arial', 30))
     while True:
         ball.move(canvas, root)
         sleep(0.03)
