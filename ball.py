@@ -23,7 +23,6 @@ class Ball:
     def move(self, canvas, root):
         x = self.center + self.length * np.sin(self.alpha*np.cos(self.w * self.time))
         y = self.center + self.length * np.cos(self.alpha*np.cos(self.w * self.time))
-        print(x, y)
         canvas.move(self.circle, x - self.x, y - self.y)
         self.x = x
         self.y = y
