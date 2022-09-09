@@ -29,7 +29,3 @@ class Ball:
         self.y = y
         root.update()
         self.time += 0.01
-
-    def function(self, y, t):
-        mu = 0.1
-        return()
